@@ -1,5 +1,5 @@
 # Pull base image
-# docker pull ubuntu:14.04
+docker pull ubuntu:14.04
 # Read from conf file for setting domain name
 source conf/ldap-install.conf
 # Build image
