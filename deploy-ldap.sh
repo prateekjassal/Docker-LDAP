@@ -6,5 +6,5 @@ source conf/ldap-install.conf
 docker build -t ubuntu/ldapserver .
 # Remove any existing containers
 docker rm -f ldapserver
-docker run --name=ldapserver --hostname=$domainName -p 636:636 -p 389:389 \
+docker run --name=ldapserver --hostname=$domainName -d -p 636:636 -p 389:389 \
 ubuntu/ldapserver
